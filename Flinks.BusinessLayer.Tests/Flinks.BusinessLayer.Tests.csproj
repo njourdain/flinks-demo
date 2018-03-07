@@ -12,6 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Flinks.BusinessLayer\Flinks.BusinessLayer.csproj" />
-    <ProjectReference Include="..\Flinks.Login.Repository\Flinks.Login.Repository.csproj" />
+    <ProjectReference Include="..\Flinks.Repositories.Login\Flinks.Repositories.Login.csproj" />
   </ItemGroup>
 </Project>

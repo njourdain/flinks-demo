@@ -4,13 +4,13 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Flinks.Login.Repository.Entities;
+using Flinks.Repositories.Login.Entities;
 using Moq;
 using Moq.Protected;
 using Newtonsoft.Json;
 using Xunit;
 
-namespace Flinks.Login.Repository.Tests
+namespace Flinks.Repositories.Login.Tests
 {
     public class LoginRepositoryTest
     {

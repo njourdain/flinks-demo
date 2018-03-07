@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Flinks.Login.Repository.Entities;
+using Flinks.Repositories.Login.Entities;
 
-namespace Flinks.Login.Repository
+namespace Flinks.Repositories.Login
 {
     public interface ILoginRepository
     {

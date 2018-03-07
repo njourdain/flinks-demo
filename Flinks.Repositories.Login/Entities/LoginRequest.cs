@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Flinks.Login.Repository.Entities
+namespace Flinks.Repositories.Login.Entities
 {
     public class LoginRequest
     {

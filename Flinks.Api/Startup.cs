@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Flinks.BusinessLayer;
-using Flinks.Login.Repository;
+using Flinks.Repositories.Login;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Converters;
 
 namespace Flinks.Api
 {
@@ -26,7 +22,7 @@ namespace Flinks.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(jo => jo.SerializerSettings.Converters.Add(new StringEnumConverter(true)));
             services.AddTransient(s => new HttpClient { BaseAddress = new Uri(Configuration["BaseFlinksUri"])});
             services.AddTransient<ILoginRepository, LoginRepository>();
             services.Configure<MockUserOptions>(Configuration.GetSection("MockUser"));

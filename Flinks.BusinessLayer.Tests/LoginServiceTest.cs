@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using Flinks.BusinessLayer.Options;
-using Flinks.Login.Repository;
-using Flinks.Login.Repository.Entities;
+using Flinks.Repositories.Login;
+using Flinks.Repositories.Login.Entities;
 using Moq;
 using Xunit;
 

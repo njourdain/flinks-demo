@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Flinks.Repository.Common
+namespace Flinks.Repositories.Common
 {
     public class FlinksLogin
     {

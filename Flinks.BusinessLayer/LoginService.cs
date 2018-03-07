@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Flinks.BusinessLayer.Entities;
 using Flinks.BusinessLayer.Options;
-using Flinks.Login.Repository;
-using Flinks.Login.Repository.Entities;
+using Flinks.Repositories.Login;
+using Flinks.Repositories.Login.Entities;
 
 namespace Flinks.BusinessLayer
 {

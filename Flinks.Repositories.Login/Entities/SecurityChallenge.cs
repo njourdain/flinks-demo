@@ -1,4 +1,4 @@
-﻿namespace Flinks.Login.Repository.Entities
+﻿namespace Flinks.Repositories.Login.Entities
 {
     public class SecurityChallenge
     {

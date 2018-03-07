@@ -4655,7 +4655,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Flinks.Login.Repository": "1.0.0"
+          "Flinks.Repositories.Login": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Flinks.BusinessLayer.dll": {}
@@ -4664,28 +4664,30 @@
           "bin/placeholder/Flinks.BusinessLayer.dll": {}
         }
       },
-      "Flinks.Login.Repository/1.0.0": {
+      "Flinks.Repositories.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Flinks.Repository.Common": "1.0.0",
           "Newtonsoft.Json": "11.0.1"
         },
         "compile": {
-          "bin/placeholder/Flinks.Login.Repository.dll": {}
+          "bin/placeholder/Flinks.Repositories.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Flinks.Login.Repository.dll": {}
+          "bin/placeholder/Flinks.Repositories.Common.dll": {}
         }
       },
-      "Flinks.Repository.Common/1.0.0": {
+      "Flinks.Repositories.Login/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Flinks.Repositories.Common": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/Flinks.Repository.Common.dll": {}
+          "bin/placeholder/Flinks.Repositories.Login.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Flinks.Repository.Common.dll": {}
+          "bin/placeholder/Flinks.Repositories.Login.dll": {}
         }
       }
     }
@@ -12305,21 +12307,21 @@
       "path": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj",
       "msbuildProject": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
     },
-    "Flinks.Login.Repository/1.0.0": {
+    "Flinks.Repositories.Common/1.0.0": {
       "type": "project",
-      "path": "../Flinks.Login.Repository/Flinks.Login.Repository.csproj",
-      "msbuildProject": "../Flinks.Login.Repository/Flinks.Login.Repository.csproj"
+      "path": "../Flinks.Repositories.Common/Flinks.Repositories.Common.csproj",
+      "msbuildProject": "../Flinks.Repositories.Common/Flinks.Repositories.Common.csproj"
     },
-    "Flinks.Repository.Common/1.0.0": {
+    "Flinks.Repositories.Login/1.0.0": {
       "type": "project",
-      "path": "../Flinks.Repository.Common/Flinks.Repository.Common.csproj",
-      "msbuildProject": "../Flinks.Repository.Common/Flinks.Repository.Common.csproj"
+      "path": "../Flinks.Repositories.Login/Flinks.Repositories.Login.csproj",
+      "msbuildProject": "../Flinks.Repositories.Login/Flinks.Repositories.Login.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Flinks.BusinessLayer >= 1.0.0",
-      "Flinks.Login.Repository >= 1.0.0",
+      "Flinks.Repositories.Login >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12356,8 +12358,8 @@
             "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj": {
               "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
             },
-            "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj": {
-              "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj"
+            "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.Login/Flinks.Repositories.Login.csproj": {
+              "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.Login/Flinks.Repositories.Login.csproj"
             }
           }
         }

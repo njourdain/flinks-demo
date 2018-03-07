@@ -1,6 +1,6 @@
-﻿using Flinks.Repository.Common;
+﻿using Flinks.Repositories.Common;
 
-namespace Flinks.Login.Repository.Entities
+namespace Flinks.Repositories.Login.Entities
 {
     public class LoginResponse : FlinksResponse
     {

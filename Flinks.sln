@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Api", "Flinks.Api\Flinks.Api.csproj", "{4AB254F4-992D-4E42-8441-2CD118CC9F07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.BusinessLayer", "Flinks.BusinessLayer\Flinks.BusinessLayer.csproj", "{95CA7467-72C2-4DE9-908B-B2ABF4431A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Login.Repository", "Flinks.Login.Repository\Flinks.Login.Repository.csproj", "{2422D64E-6486-4097-9039-4B131776122E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Repository.Common", "Flinks.Repository.Common\Flinks.Repository.Common.csproj", "{4F8A7B1A-CF33-4157-9B3C-748CB1C38188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Login.Repository.Tests", "Flinks.Login.Repository.Tests\Flinks.Login.Repository.Tests.csproj", "{0F020208-F24A-4A9D-A163-84A5610F46D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,21 @@ Global
 		{4AB254F4-992D-4E42-8441-2CD118CC9F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB254F4-992D-4E42-8441-2CD118CC9F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB254F4-992D-4E42-8441-2CD118CC9F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CA7467-72C2-4DE9-908B-B2ABF4431A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CA7467-72C2-4DE9-908B-B2ABF4431A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CA7467-72C2-4DE9-908B-B2ABF4431A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CA7467-72C2-4DE9-908B-B2ABF4431A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2422D64E-6486-4097-9039-4B131776122E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2422D64E-6486-4097-9039-4B131776122E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2422D64E-6486-4097-9039-4B131776122E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2422D64E-6486-4097-9039-4B131776122E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8A7B1A-CF33-4157-9B3C-748CB1C38188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8A7B1A-CF33-4157-9B3C-748CB1C38188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8A7B1A-CF33-4157-9B3C-748CB1C38188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8A7B1A-CF33-4157-9B3C-748CB1C38188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F020208-F24A-4A9D-A163-84A5610F46D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F020208-F24A-4A9D-A163-84A5610F46D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F020208-F24A-4A9D-A163-84A5610F46D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F020208-F24A-4A9D-A163-84A5610F46D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

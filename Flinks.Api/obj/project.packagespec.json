@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj": {
+            "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

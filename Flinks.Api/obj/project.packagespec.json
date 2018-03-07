@@ -15,6 +15,9 @@
     "frameworks": {
       "netcoreapp2.0": {
         "projectReferences": {
+          "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj": {
+            "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
+          },
           "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj": {
             "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj"
           }

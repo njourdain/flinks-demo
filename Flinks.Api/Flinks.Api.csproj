@@ -12,6 +12,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Flinks.BusinessLayer\Flinks.BusinessLayer.csproj" />
     <ProjectReference Include="..\Flinks.Login.Repository\Flinks.Login.Repository.csproj" />
   </ItemGroup>
 </Project>

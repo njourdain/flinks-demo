@@ -4651,6 +4651,19 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Flinks.BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Flinks.Login.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Flinks.BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Flinks.BusinessLayer.dll": {}
+        }
+      },
       "Flinks.Login.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -12287,6 +12300,11 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "Flinks.BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj",
+      "msbuildProject": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
+    },
     "Flinks.Login.Repository/1.0.0": {
       "type": "project",
       "path": "../Flinks.Login.Repository/Flinks.Login.Repository.csproj",
@@ -12300,6 +12318,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Flinks.BusinessLayer >= 1.0.0",
       "Flinks.Login.Repository >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12334,6 +12353,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj": {
+              "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
+            },
             "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj": {
               "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Login.Repository/Flinks.Login.Repository.csproj"
             }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Flinks.BusinessLayer;
 using Flinks.Login.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,8 @@ namespace Flinks.Api
             services.AddMvc();
             services.AddTransient(s => new HttpClient { BaseAddress = new Uri(Configuration["BaseFlinksUri"])});
             services.AddTransient<ILoginRepository, LoginRepository>();
+            services.Configure<MockUserOptions>(Configuration.GetSection("MockUser"));
+            services.AddTransient<ILoginService, LoginService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

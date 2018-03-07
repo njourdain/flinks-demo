@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.BusinessLayer.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Repositories.AccountsDetail", "Flinks.Repositories.AccountsDetail\Flinks.Repositories.AccountsDetail.csproj", "{573495A3-1939-4083-8D3C-41E5AA96B5FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flinks.Repositories.AccountsDetail.Tests", "Flinks.Repositories.AccountsDetail.Tests\Flinks.Repositories.AccountsDetail.Tests.csproj", "{3FCD62B0-37FB-4CE5-AC28-168E98AFF1BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{573495A3-1939-4083-8D3C-41E5AA96B5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{573495A3-1939-4083-8D3C-41E5AA96B5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{573495A3-1939-4083-8D3C-41E5AA96B5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCD62B0-37FB-4CE5-AC28-168E98AFF1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCD62B0-37FB-4CE5-AC28-168E98AFF1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCD62B0-37FB-4CE5-AC28-168E98AFF1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCD62B0-37FB-4CE5-AC28-168E98AFF1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

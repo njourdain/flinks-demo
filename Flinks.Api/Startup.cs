@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using Flinks.BusinessLayer;
+using Flinks.Repositories.AccountsDetail;
 using Flinks.Repositories.Login;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,11 +23,12 @@ namespace Flinks.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().AddJsonOptions(jo => jo.SerializerSettings.Converters.Add(new StringEnumConverter(true)));
+            services.AddMvc().AddJsonOptions(jo => jo.SerializerSettings.Converters.Add(new StringEnumConverter()));
             services.AddTransient(s => new HttpClient { BaseAddress = new Uri(Configuration["BaseFlinksUri"])});
             services.AddTransient<ILoginRepository, LoginRepository>();
             services.Configure<MockUserOptions>(Configuration.GetSection("MockUser"));
             services.AddTransient<ILoginService, LoginService>();
+            services.AddTransient<IAccountsDetailRepository, AccountsDetailRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

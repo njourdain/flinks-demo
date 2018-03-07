@@ -1,6 +1,8 @@
-﻿using System.Net.Http;
+﻿using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Flinks.Repositories.Common
 {
@@ -19,7 +21,8 @@ namespace Flinks.Repositories.Common
                 payload,
                 Formatting.None, 
                 new JsonSerializerSettings { 
-                    NullValueHandling = NullValueHandling.Ignore
+                    NullValueHandling = NullValueHandling.Ignore,
+                    Converters = new List<JsonConverter> { new StringEnumConverter() }
                 }
             );
             

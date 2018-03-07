@@ -4664,6 +4664,19 @@
           "bin/placeholder/Flinks.BusinessLayer.dll": {}
         }
       },
+      "Flinks.Repositories.AccountsDetail/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Flinks.Repositories.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Flinks.Repositories.AccountsDetail.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Flinks.Repositories.AccountsDetail.dll": {}
+        }
+      },
       "Flinks.Repositories.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -12307,6 +12320,11 @@
       "path": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj",
       "msbuildProject": "../Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
     },
+    "Flinks.Repositories.AccountsDetail/1.0.0": {
+      "type": "project",
+      "path": "../Flinks.Repositories.AccountsDetail/Flinks.Repositories.AccountsDetail.csproj",
+      "msbuildProject": "../Flinks.Repositories.AccountsDetail/Flinks.Repositories.AccountsDetail.csproj"
+    },
     "Flinks.Repositories.Common/1.0.0": {
       "type": "project",
       "path": "../Flinks.Repositories.Common/Flinks.Repositories.Common.csproj",
@@ -12321,6 +12339,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Flinks.BusinessLayer >= 1.0.0",
+      "Flinks.Repositories.AccountsDetail >= 1.0.0",
       "Flinks.Repositories.Login >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12357,6 +12376,9 @@
           "projectReferences": {
             "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj": {
               "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.BusinessLayer/Flinks.BusinessLayer.csproj"
+            },
+            "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.AccountsDetail/Flinks.Repositories.AccountsDetail.csproj": {
+              "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.AccountsDetail/Flinks.Repositories.AccountsDetail.csproj"
             },
             "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.Login/Flinks.Repositories.Login.csproj": {
               "projectPath": "/Users/nicolasjourdain/Repositories/Flinks/Flinks.Repositories.Login/Flinks.Repositories.Login.csproj"

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Flinks.Repositories.AccountsDetail.Entities;
@@ -21,11 +20,9 @@ namespace Flinks.BusinessLayer.Builders
             {
                 if (account.Currency != Currency.USD) return;
                 
-                // Specs say we want the balance as an int, if it's not really the case we could just return double
-                var roundedBalance = Math.Round(account.Balance.Current);
                 _accounts.Add(new Entities.UsdAccount
                 {
-                    Balance = roundedBalance > int.MaxValue ? int.MaxValue : (int)roundedBalance
+                    Balance = account.Balance.Current
                 });
             });
         }

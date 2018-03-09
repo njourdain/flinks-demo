@@ -2,6 +2,6 @@
 {
     public class UsdAccount
     {
-        public int Balance { get; set; }
+        public double Balance { get; set; }
     }
 }

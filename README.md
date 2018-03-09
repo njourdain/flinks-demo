@@ -26,4 +26,4 @@ In another terminal session, use the following command :
 
 ## USD accounts balance
 
-The USD accounts balances are rounded and return as an integer. To get them as numbers, checkout branch number-instead-of-int.
+The USD accounts balances are rounded and returned as an integer. To get them as numbers, checkout branch number-instead-of-int.

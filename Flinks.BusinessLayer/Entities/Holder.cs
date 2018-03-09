@@ -1,4 +1,4 @@
-﻿namespace Flinks.Repositories.AccountsDetail.Entities
+﻿namespace Flinks.BusinessLayer.Entities
 {
     public class Holder
     {

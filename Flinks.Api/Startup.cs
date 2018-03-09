@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using Flinks.BusinessLayer;
+using Flinks.BusinessLayer.Builders;
 using Flinks.Repositories.AccountsDetail;
 using Flinks.Repositories.Login;
 using Microsoft.AspNetCore.Builder;
@@ -29,6 +30,11 @@ namespace Flinks.Api
             services.Configure<MockUserOptions>(Configuration.GetSection("MockUser"));
             services.AddTransient<ILoginService, LoginService>();
             services.AddTransient<IAccountsDetailRepository, AccountsDetailRepository>();
+            services.AddTransient<IOperationAccountsBuilder, OperationAccountsBuilder>();
+            services.AddTransient<IUsdAccountsBuilder, UsdAccountsBuilder>();
+            services.AddTransient<IBiggestCreditTrxIdBuilder, BiggestCreditTrxIdBuilder>();
+            services.AddTransient<IAccountsSummaryBuilder, AccountsSummaryBuilder>();
+            services.AddTransient<IAccountsSummaryService, AccountsSummaryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

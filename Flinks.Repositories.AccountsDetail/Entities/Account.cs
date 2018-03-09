@@ -2,7 +2,7 @@
 {
     public class Account
     {
-        public Holder Holder { get; set; }
+        public AccountHolder Holder { get; set; }
         public string AccountNumber { get; set; }
         public AccountCategory Category { get; set; }
         public Currency Currency { get; set; }

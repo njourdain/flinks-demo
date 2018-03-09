@@ -4655,6 +4655,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Flinks.Repositories.AccountsDetail": "1.0.0",
           "Flinks.Repositories.Login": "1.0.0"
         },
         "compile": {
